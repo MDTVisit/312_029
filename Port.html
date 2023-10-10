@@ -38,7 +38,6 @@
                     <button onclick="showNextImage()" style="background-color: black; color: green">Art</button>
                     <button onclick="showNextDesiger()" style="background-color: black; color: green">Desige</button>
                     <button onclick="showNextStory()" style="background-color: black; color: green">Story</button>
-                    <button onclick="showNextEdit()" style="background-color: black; color: green">Edit</button>
                     <p id="Hello">ผลงาน</p>
                 </h1>
                 <img id="test" src="Maya/Maya1.jpg" alt="Maya">
@@ -86,18 +85,7 @@
                 const storyElement = document.getElementById("test");
                 storyElement.src = Story[currentStoryIndex];
             }
-        </script>
-
-            <script>
-            const Edit = ["Editer/edit.png", "Editer/edit2.png"];
-            let currentEditIndex = 0;
-
-            function showNextEdit() {
-                currentEditIndex = (currentEditIndex + 1) % Edit.length;
-                const editElement = document.getElementById("test");
-                editElement.src = Edit[currentEditIndex];
-            }
-            </script>  
+        </script> 
     </div> 
 
     
